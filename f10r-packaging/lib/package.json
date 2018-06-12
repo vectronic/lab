@@ -1,5 +1,5 @@
 {
-  "name": "@t9r/lib",
+  "name": "@f10r/lib",
   "version": "0.0.0",
   "private": true,
   "main": "build/lib.mjs",

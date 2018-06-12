@@ -40,9 +40,9 @@ The browser module build also performs minification and produces a sidecar sourc
 
 ### Install
 `npm install`
-`npm link @t9r/lib` 
+`npm link @f10r/lib` 
 
-There might be some faffing around with needing to remove the `@t9r/lib` dependency to get the install to work, then
+There might be some faffing around with needing to remove the `@f10r/lib` dependency to get the install to work, then
 adding it back in and then linking it.
 
 # Watch Source and Launch Browser with Hot Reload
@@ -57,7 +57,7 @@ You should see a 404 error logged when trying to dynamically load the `plugin` m
 Now link in the plugin and try again:
 
 ```
-npm link @t9r/plugin
+npm link @f10r/plugin
 ```
 After a browser refresh, there should be no error as the module is found when the dynamic import is performed.
 

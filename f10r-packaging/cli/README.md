@@ -32,9 +32,9 @@ The module is generated without browser replacements for NodeJS packages via:
 
 ### Install
 `npm install`
-`npm link @t9r/lib` 
+`npm link @f10r/lib` 
 
-There might be some faffing around with needing to remove the `@t9r/lib` dependency to get the install to work, then
+There might be some faffing around with needing to remove the `@f10r/lib` dependency to get the install to work, then
 adding it back in and then linking it.
 
 ### Watch Source
@@ -49,12 +49,12 @@ Enable debug logging:
 
 You should see an error logged:
 
-`lib:log error when dynamically importing @t9r/plugin! => Cannot find module @t9r/plugin`
+`lib:log error when dynamically importing @f10r/plugin! => Cannot find module @f10r/plugin`
 
 Now link in the plugin and try again:
 
 ```
-npm link @t9r/plugin
+npm link @f10r/plugin
 DEBUG=* node --experimental-modules build/cli.mjs
 ```
 This time there should be no error as the module is found when the dynamic import is performed.
