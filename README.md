@@ -1,4 +1,4 @@
 # Lab
-Miscellaneous lab experiments
+Miscellaneous code experiments
 
 

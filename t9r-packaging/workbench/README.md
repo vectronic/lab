@@ -61,4 +61,6 @@ npm link @t9r/plugin
 ```
 After a browser refresh, there should be no error as the module is found when the dynamic import is performed.
 
+NOTE: Instead of linking locally and serving from the same web server, the intention is to instead serve plugins published to NPM via https://unpkg.com
+
 
