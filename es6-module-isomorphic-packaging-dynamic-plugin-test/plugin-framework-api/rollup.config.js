@@ -5,19 +5,19 @@ import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import resolve from 'rollup-plugin-node-resolve';
 
 export default {
-    input: 'src/js/index.js',
+    input: 'src/index.js',
     output: {
-        file: 'dist/index.mjs',
+        file: 'lib/index.mjs',
         format: 'es'
     },
     watch: {
-        include: 'src/js/**',
+        include: 'src/**',
     },
     plugins: [
         peerDepsExternal(),
         eslint({
             include: [
-                'src/js/**'
+                'src/**'
             ]
         }),
         resolve(),

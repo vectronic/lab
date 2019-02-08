@@ -12,3 +12,7 @@
 ### Expose for Consumption in Sibling Projects
 
     sudo npm link 
+
+### Generate Docs
+
+    npm run docs

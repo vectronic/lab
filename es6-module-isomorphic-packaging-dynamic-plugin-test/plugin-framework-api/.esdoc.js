@@ -1,5 +1,5 @@
 module.exports = {
-    source: './src/js',
+    source: './src',
     destination: './docs',
     plugins: [
         {
