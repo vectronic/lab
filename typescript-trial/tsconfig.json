@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitAny": true,
+        "module": "es6",
+        "target": "es6",
+        "removeComments": false,
+        "declarationDir": "dist/types",
+        "typeRoots": [
+            "node_modules/@types"
+        ]
+    },
+    "include": [
+        "src/ts/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
