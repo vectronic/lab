@@ -1,9 +1,8 @@
-## ES6 Module Isomorphic Packaging Dynamic - Plugin Framework API
+## ES6 Module Isomorphic Packaging Dynamic - example App Plugin C
 
 ### Install and Build
 
     npm install
-    npm install debug --no-save
     npm run build
 
 ### Watch Source

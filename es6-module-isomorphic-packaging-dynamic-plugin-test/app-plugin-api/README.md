@@ -1,4 +1,4 @@
-## ES6 Module Isomorphic Packaging Dynamic - Plugin Framework API
+## ES6 Module Isomorphic Packaging Dynamic - App Plugin API
 
 ### Install and Build
 

@@ -1,8 +1,9 @@
-import * as debug_ from 'debug';
-import { Plugin } from './plugin';
+/**
+ * @module @es6-module-isomorphic-packaging-dynamic-plugin-test/typescript-trial
+ */
+import debug from 'debug';
 
-const debug = debug_;
-const log = debug('PluginDescriptor');
+import { Plugin } from './plugin';
 
 /**
  * Descriptor for a [[Plugin]]
@@ -10,6 +11,8 @@ const log = debug('PluginDescriptor');
 export class PluginDescriptor {
 
     public readonly plugin: Plugin;
+    private readonly log: debug.Debugger;
+
 
     /**
      * Constructor
@@ -17,14 +20,16 @@ export class PluginDescriptor {
      * @param plugin - the [[Plugin]] this is a descriptor for
      */
     public constructor(plugin: Plugin) {
+        this.log = debug('PluginDescriptor');
         this.plugin = plugin;
     }
+
 
     /**
      * Dump information to log
      */
     public dump(): void {
-        log('PluginDescriptor:');
+        this.log('PluginDescriptor:');
         this.plugin.dump();
     }
 }

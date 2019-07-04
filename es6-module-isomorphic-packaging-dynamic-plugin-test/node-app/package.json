@@ -1,19 +1,17 @@
 {
-    "name": "@es6-module-isomorphic-packaging-dynamic-plugin-test/plugin-framework-api",
+    "name": "@es6-module-isomorphic-packaging-dynamic-plugin-test/node-app",
     "version": "0.0.0",
     "private": true,
-    "main": "lib/index.mjs",
-    "module": "lib/index.mjs",
-    "files": [
-        "lib"
-    ],
+    "main": "dist/index.mjs",
+    "module": "dist/index.mjs",
     "scripts": {
         "build": "./node_modules/.bin/rollup -c",
         "docs": "./node_modules/.bin/esdoc",
         "watch": "./node_modules/.bin/rollup -c --watch"
     },
-    "dependencies": {},
-    "peerDependencies": {
+    "dependencies": {
+        "@es6-module-isomorphic-packaging-dynamic-plugin-test/app-plugin-api": "0.0.0",
+        "@es6-module-isomorphic-packaging-dynamic-plugin-test/app-plugin-a": "0.0.0",
         "debug": "^4.1.1"
     },
     "devDependencies": {

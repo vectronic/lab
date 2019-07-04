@@ -1,5 +1,5 @@
 {
-    "name": "@es6-module-isomorphic-packaging-dynamic-plugin-test/plugin-framework-api",
+    "name": "@es6-module-isomorphic-packaging-dynamic-plugin-test/plugin-framework",
     "version": "0.0.0",
     "private": true,
     "main": "lib/index.mjs",

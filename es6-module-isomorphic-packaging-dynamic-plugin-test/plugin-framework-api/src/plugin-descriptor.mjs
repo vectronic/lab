@@ -1,7 +1,6 @@
-// eslint-disable-next-line import/no-unresolved
-import { debug } from 'debug';
+import Debug from 'debug';
 
-const log = debug('PluginDescriptor');
+const log = Debug('PluginDescriptor');
 
 /**
  * Descriptor for a {@link Plugin}

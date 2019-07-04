@@ -1,5 +1,5 @@
 {
-    "name": "@es6-module-isomorphic-packaging-dynamic-plugin-test/plugin-framework-api",
+    "name": "@es6-module-isomorphic-packaging-dynamic-plugin-test/app-plugin-a",
     "version": "0.0.0",
     "private": true,
     "main": "lib/index.mjs",
@@ -12,7 +12,10 @@
         "docs": "./node_modules/.bin/esdoc",
         "watch": "./node_modules/.bin/rollup -c --watch"
     },
-    "dependencies": {},
+    "dependencies": {
+        "@es6-module-isomorphic-packaging-dynamic-plugin-test/app-plugin-api": "0.0.0",
+        "@es6-module-isomorphic-packaging-dynamic-plugin-test/plugin-framework-api": "0.0.0"
+    },
     "peerDependencies": {
         "debug": "^4.1.1"
     },

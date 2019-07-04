@@ -1,7 +1,8 @@
-import * as debug_ from 'debug';
+/**
+ * @module @es6-module-isomorphic-packaging-dynamic-plugin-test/typescript-trial
+ */
+import debug from 'debug';
 
-const debug = debug_;
-const log = debug('Plugin');
 
 /**
  * A Plugin
@@ -9,6 +10,8 @@ const log = debug('Plugin');
 export class Plugin {
 
     public readonly name: string;
+    private readonly log: debug.Debugger;
+
 
     /**
      * Constructor
@@ -16,13 +19,15 @@ export class Plugin {
      * @param name - Name of the plugin
      */
     public constructor(name: string) {
+        this.log = debug('Plugin');
         this.name = name;
     }
+
 
     /**
      * Dump information to log
      */
     public dump(): void {
-        log(`name: ${this.name}`);
+        this.log(`name: ${this.name}`);
     }
 }
