@@ -27,12 +27,7 @@ export default {
             exclude: 'node_modules/**',
             ENV: JSON.stringify(process.env.NODE_ENV || 'development'),
         }),
-        resolve({
-            module: true,
-            jsnext: true,
-            main: true,
-            browser: true
-        }),
+        resolve(),
         commonjs(),
         (process.env.NODE_ENV === 'production' && uglify())
     ]
